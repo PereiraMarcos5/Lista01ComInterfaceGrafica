@@ -41,5 +41,20 @@ namespace Lista01ComInterfaceGráfica
         {
             new Exercicio05().Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            new Exercicio06().Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            new Exercicio07().Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            new Exercicio08().Show();
+        }
     }
 }

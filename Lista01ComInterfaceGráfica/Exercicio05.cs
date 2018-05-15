@@ -15,7 +15,9 @@ namespace Lista01ComInterfaceGráfica
         string NomeCarro = "";
         double ValorCarro = 0;
         double ValorParcela = 0;
-        int QuantidadeMeses = 0;
+        double QuantidadeMeses = 0;
+        double QuantidadeParcelinhas = 0;
+        double Diferença = 0;
 
         public Exercicio05()
         {
@@ -39,7 +41,7 @@ namespace Lista01ComInterfaceGráfica
 
         private void NupQuantMeses_ValueChanged(object sender, EventArgs e)
         {
-            QuantidadeMeses = Convert.ToInt32(NupQuantMeses.Value);
+            QuantidadeMeses = Convert.ToDouble(NupQuantMeses.Value);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -50,8 +52,13 @@ namespace Lista01ComInterfaceGráfica
 
         private void button1_Click(object sender, EventArgs e)
         {
-            txtResultado.Text = (string.Format("Nome do Carro:{0}\r\nValor do Carro:{1}\r\nValor cada parcela:{2}\r\nQuantidade de parcelas:{3}\r\nQuantidade de Meses:{4}\r\nValor total do Financiamento:{5}\r\nDifernça entre o Valor toatl e o Financiamento:{6}"
-                ,NomeCarro, ValorCarro, ValorParcela));
+
+            QuantidadeParcelinhas = QuantidadeMeses / ValorParcela;
+            Diferença = ValorCarro - (ValorParcela * QuantidadeParcelinhas);
+            double ValorTotal = ValorParcela * QuantidadeParcelinhas;
+
+            txtResultado.Text = (string.Format("Nome do Carro:{0}\r\nValor do Carro:{1}\r\nValor cada parcela:{2}\r\nQuantidade de parcelas:{3}\r\nQuantidade de Meses:{4}\r\nValor total do Financiamento:{5}\r\nDiferença entre o Valor total e o Financiamento:{6}"
+                ,NomeCarro, ValorCarro, ValorParcela, QuantidadeParcelinhas, QuantidadeMeses, ValorTotal, Diferença));
         }
     }
 }

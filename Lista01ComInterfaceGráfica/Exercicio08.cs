@@ -79,6 +79,7 @@ namespace Lista01ComInterfaceGráfica
 
             textBox9.Text = (string.Format("Valor de Telefone:{0}\r\nImpostos:{1}\r\nOutros:{2}\r\nValor Total:{3}"
                 ,ValorTelefone, Impostos, Outros, ValorTotal));
+           
         }
 
         private void textBox7_TextChanged(object sender, EventArgs e)
@@ -91,16 +92,16 @@ namespace Lista01ComInterfaceGráfica
             Seguro = Convert.ToDouble(textBox8.Text);
         }
 
-        private void button1_KeyDown(object sender, KeyEventArgs e)
+        private void textBox9_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void textBox8_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
                 button1.PerformClick();
             }
-        }
-
-        private void textBox9_TextChanged(object sender, EventArgs e)
-        {
 
         }
 

@@ -85,7 +85,7 @@
             this.textBox5.Location = new System.Drawing.Point(12, 219);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 4;
+            this.textBox5.TabIndex = 5;
             this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // label1
@@ -148,7 +148,7 @@
             this.textBox6.Location = new System.Drawing.Point(12, 258);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 11;
+            this.textBox6.TabIndex = 6;
             this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // button1
@@ -157,11 +157,10 @@
             this.button1.Location = new System.Drawing.Point(284, 24);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(84, 56);
-            this.button1.TabIndex = 12;
+            this.button1.TabIndex = 8;
             this.button1.Text = "Enter";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            this.button1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.button1_KeyDown);
             // 
             // label7
             // 
@@ -177,7 +176,7 @@
             this.textBox7.Location = new System.Drawing.Point(12, 180);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 13;
+            this.textBox7.TabIndex = 4;
             this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // textBox8
@@ -185,8 +184,9 @@
             this.textBox8.Location = new System.Drawing.Point(12, 296);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 16;
+            this.textBox8.TabIndex = 7;
             this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
+            this.textBox8.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox8_KeyDown);
             // 
             // label8
             // 
